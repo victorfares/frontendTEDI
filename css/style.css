@@ -1,0 +1,33 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; }
+h1, h2 { color: #333; text-align: center; }
+
+/* Navegação e Cards */
+.nav-container { display: flex; justify-content: center; gap: 30px; margin-top: 50px; }
+.nav-card { width: 250px; padding: 30px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; text-decoration: none; color: #333; transition: transform 0.2s; display: block; }
+.nav-card:hover { transform: translateY(-5px); border: 2px solid #007bff; }
+.nav-card h2 { color: #007bff; margin-top: 0; }
+
+/* Tabelas e Listas */
+.container { max-width: 1000px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.header-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+th { background-color: #007bff; color: white; }
+tr:hover { background-color: #f1f1f1; }
+
+/* Formulários */
+form { max-width: 500px; margin: 0 auto; }
+label { display: block; margin-top: 10px; font-weight: bold; }
+input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+.btn-group { margin-top: 20px; display: flex; justify-content: space-between; }
+
+/* Botões */
+.btn { padding: 10px 15px; text-decoration: none; border-radius: 4px; color: white; font-size: 14px; border: none; cursor: pointer; display: inline-block; }
+.btn-primary { background-color: #007bff; }
+.btn-success { background-color: #28a745; }
+.btn-warning { background-color: #ffc107; color: #333; }
+.btn-secondary { background-color: #6c757d; }
+.btn-cancel { background-color: #6c757d; }
+.btn-danger { background-color: #dc3545; color: white; margin-left: 5px; } /* VERMELHO PARA EXCLUIR */
+.btn-danger:hover { background-color: #c82333; }
+.search-box { display: flex; gap: 5px; }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Membros TEDI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Membros</h1>
+        
+        <div class="header-actions">
+            <a href="index.html" class="btn btn-secondary">← Voltar Home</a>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar (Nome/RA)...">
+                <button onclick="buscarMembros()" class="btn btn-primary">Buscar</button>
+                <button onclick="carregarMembros()" class="btn btn-secondary">Limpar</button>
+            </div>
+            
+            <a href="membros-form.html" class="btn btn-success">+ Novo Membro</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RA</th>
+                    <th>Departamento</th>
+                    <th>Função</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/membros.js"></script>
+</body>
+</html>

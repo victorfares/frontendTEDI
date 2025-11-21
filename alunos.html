@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alunos TEDI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Alunos</h1>
+        
+        <div class="header-actions">
+            <a href="index.html" class="btn btn-secondary">← Voltar Home</a>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar (Nome/RG)...">
+                <button onclick="buscarAlunos()" class="btn btn-primary">Buscar</button>
+                <button onclick="carregarAlunos()" class="btn btn-secondary">Limpar</button>
+            </div>
+            
+            <a href="alunos-form.html" class="btn btn-success">+ Novo Aluno</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RG</th>
+                    <th>Nível Digital</th>
+                    <th>Email</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/alunos.js"></script>
+</body>
+</html>

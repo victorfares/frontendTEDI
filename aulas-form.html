@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Aula</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nova Aula/Evento</h1>
+        
+        <form id="form-aula">
+            <label>Título:</label>
+            <input type="text" id="titulo" required>
+
+            <label>Descrição:</label>
+            <input type="text" id="descricao" required>
+
+            <label>Data:</label>
+            <input type="date" id="data" required>
+
+            <div class="btn-group">
+                <a href="aulas.html" class="btn btn-cancel">Cancelar</a>
+                <button type="submit" class="btn btn-success">Criar Aula</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/aulas-form.js"></script>
+</body>
+</html>

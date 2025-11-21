@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Membro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo-pagina">Novo Membro</h1>
+        
+        <form id="form-membro">
+            <label>Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Telefone:</label>
+            <input type="text" id="telefone">
+
+            <label>RA (Identificador):</label>
+            <input type="text" id="ra" required>
+
+            <label>Departamento:</label>
+            <input type="text" id="departamento" required>
+
+            <label>Função:</label>
+            <input type="text" id="funcao">
+
+            <div class="btn-group">
+                <a href="membros.html" class="btn btn-cancel">Cancelar</a>
+                <button type="submit" class="btn btn-success">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/membros-form.js"></script>
+</body>
+</html>

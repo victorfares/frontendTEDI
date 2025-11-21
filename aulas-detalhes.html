@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Aula</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Específico para esta página */
+        .info-box { background: #e9ecef; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .grid-columns { display: flex; gap: 20px; }
+        .column { flex: 1; background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+        .add-form { display: flex; gap: 5px; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="aulas.html" class="btn btn-secondary" style="margin-bottom: 15px;">← Voltar para Lista</a>
+
+        <div class="info-box">
+            <h1 id="tituloAula" style="margin:0;">Carregando...</h1>
+            <p><strong>Descrição:</strong> <span id="descAula">...</span></p>
+            <p><strong>Data:</strong> <span id="dataAula">...</span></p>
+        </div>
+
+        <div class="grid-columns">
+            
+            <div class="column">
+                <h3>Alunos Participantes</h3>
+                <div class="add-form">
+                    <input type="text" id="rgAlunoInput" placeholder="RG do Aluno">
+                    <button onclick="adicionarAluno()" class="btn btn-success">Add</button>
+                </div>
+                <ul id="listaAlunos"></ul>
+            </div>
+
+            <div class="column">
+                <h3>Membros Participantes</h3>
+                <div class="add-form">
+                    <input type="text" id="raMembroInput" placeholder="RA do Membro">
+                    <button onclick="adicionarMembro()" class="btn btn-success">Add</button>
+                </div>
+                <ul id="listaMembros"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/aulas-detalhes.js"></script>
+</body>
+</html>
