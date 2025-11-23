@@ -47,8 +47,8 @@ form.addEventListener('submit', async (e) => {
     try {
         let response;
         if (alunoId) {
-            response = await fetch(`${API_BASE_URL}/alunos`, { // ou /alunos/${alunoId} dependendo da sua API
-                method: 'POST', // Se não tiver PUT, tente POST sobrescrevendo, ou implemente o PUT no Java
+            response = await fetch(`${API_BASE_URL}/alunos`, { 
+                method: 'POST', 
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(dados)
             });

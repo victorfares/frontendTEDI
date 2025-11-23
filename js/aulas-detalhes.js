@@ -55,8 +55,6 @@ function renderizarTela(aula) {
     }
 }
 
-// --- AÇÕES DE ADICIONAR ---
-
 async function adicionarAluno() {
     const rg = document.getElementById('rgAlunoInput').value;
     if (!rg) return alert("Digite o RG!");
@@ -68,8 +66,6 @@ async function adicionarAluno() {
         });
 
         if (!response.ok) throw new Error("Erro ao adicionar (Verifique se o RG existe)");
-
-        // Limpa input e recarrega para mostrar o novo aluno na lista
         document.getElementById('rgAlunoInput').value = '';
         carregarDadosAula();
 

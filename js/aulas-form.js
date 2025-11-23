@@ -58,8 +58,6 @@ form.addEventListener('submit', async (e) => {
                 body: JSON.stringify(dados)
             });
         } else {
-            // --- CRIAR (POST) ---
-            // Na criação, inicializamos com listas vazias
             dados.rgsAlunos = [];
             dados.rasMembros = [];
             
@@ -72,7 +70,6 @@ form.addEventListener('submit', async (e) => {
 
         if (!response.ok) {
             const erro = await response.json();
-            // Pega a mensagem de erro do Spring (errorMessage ou details)
             const msg = erro.errorMessage || (erro.details ? erro.details[0] : "Erro ao salvar");
             throw new Error(msg);
         }
